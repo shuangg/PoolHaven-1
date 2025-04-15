@@ -11,7 +11,7 @@ import { Menu } from "lucide-react";
 const navLinks = [
   { name: "Home", href: "#home" },
   { name: "About", href: "#about" },
-  { name: "Services", href: "#services" },
+  { name: "Tables", href: "#tables" },
   { name: "Gallery", href: "#gallery" },
   { name: "Membership", href: "#membership" },
   { name: "Contact", href: "#contact" },
@@ -51,7 +51,7 @@ export function Header() {
     <header className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? "bg-navy/95 shadow-md" : ""}`}>
       <nav className="container mx-auto px-4 md:px-8 py-4 flex items-center justify-between">
         <Link href="/" className="text-2xl font-bold text-white font-serif">
-          <span className="text-gold">Elite</span> Cue Club
+          <span className="text-gold">Q</span>Club<span className="text-gold">147</span>
         </Link>
         
         {/* Mobile Menu */}

@@ -14,7 +14,7 @@ export function HeroSection() {
       id="home" 
       className="min-h-screen flex items-center justify-center text-center bg-cover bg-center bg-no-repeat"
       style={{
-        backgroundImage: "linear-gradient(rgba(18, 24, 33, 0.7), rgba(18, 24, 33, 0.8)), url('https://images.unsplash.com/photo-1625046584920-f4a57353a03d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80')"
+        backgroundImage: "linear-gradient(rgba(18, 24, 33, 0.7), rgba(18, 24, 33, 0.8)), url('https://images.unsplash.com/photo-1608505256560-9224ba550d3b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80')"
       }}
     >
       <div className="container mx-auto px-4 md:px-8">
@@ -24,7 +24,7 @@ export function HeroSection() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          Experience Premium <span className="text-gold">Snooker & Pool</span>
+          London's Premier <span className="text-gold">Pool & Snooker</span> Club
         </motion.h1>
         
         <motion.p 
@@ -33,7 +33,7 @@ export function HeroSection() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
-          Elevate your game in our sophisticated venue featuring professional tables, full-service bar, and exclusive member benefits.
+          Home to 8 tournament-grade pool tables and a championship snooker table. Enjoy our stylish bar, professional service, and vibrant atmosphere.
         </motion.p>
         
         <motion.div 
@@ -43,10 +43,16 @@ export function HeroSection() {
           transition={{ duration: 0.6, delay: 0.4 }}
         >
           <Button 
-            onClick={() => scrollToSection("membership")}
+            onClick={() => scrollToSection("tables")}
             className="bg-gold hover:bg-gold/90 text-navy font-bold py-6 px-8 rounded-md transition-all tracking-wide text-lg"
           >
-            JOIN NOW
+            OUR TABLES
+          </Button>
+          <Button 
+            onClick={() => scrollToSection("membership")}
+            className="bg-white/10 hover:bg-white/20 text-white font-bold py-6 px-8 rounded-md transition-all tracking-wide text-lg border border-white/30"
+          >
+            MEMBERSHIP
           </Button>
           <Button 
             onClick={() => scrollToSection("contact")}

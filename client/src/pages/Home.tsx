@@ -1,6 +1,6 @@
 import { HeroSection } from "@/components/home/HeroSection";
 import { AboutSection } from "@/components/home/AboutSection";
-import { ServicesSection } from "@/components/home/ServicesSection";
+import { TablesSection } from "@/components/home/TablesSection";
 import { GallerySection } from "@/components/home/GallerySection";
 import { MembershipSection } from "@/components/home/MembershipSection";
 import { ContactSection } from "@/components/home/ContactSection";
@@ -34,7 +34,7 @@ export default function Home() {
 
   // Update document title
   useEffect(() => {
-    document.title = "Elite Cue Club | Premium Pool & Snooker Experience";
+    document.title = "QClub147 | London's Premier Pool & Snooker Venue";
   }, []);
 
   return (
@@ -42,7 +42,7 @@ export default function Home() {
       <Header />
       <HeroSection />
       <AboutSection />
-      <ServicesSection />
+      <TablesSection />
       <GallerySection />
       <MembershipSection />
       <ContactSection />

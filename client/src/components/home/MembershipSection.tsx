@@ -12,42 +12,42 @@ export function MembershipSection() {
 
   const membershipPlans = [
     {
-      name: "Standard",
-      price: "£49",
+      name: "Bronze",
+      price: "£35",
       period: "/month",
       features: [
-        "Unlimited table access",
-        "Members-only rates",
-        "Entry to club tournaments",
-        "Free equipment hire"
+        "Discounted table rates",
+        "Free equipment hire",
+        "Access to club tournaments",
+        "Member-only events"
       ],
       popular: false,
-      color: "gold"
+      color: "bronze"
     },
     {
-      name: "Premium",
-      price: "£79",
+      name: "Silver",
+      price: "£65",
       period: "/month",
       features: [
-        "All Standard benefits",
+        "All Bronze benefits",
         "Priority table booking",
-        "Monthly coaching session",
-        "Discounted bar prices",
+        "10% off drinks at the bar",
+        "One free hourly coaching session",
         "Guest passes (2 per month)"
       ],
       popular: true,
-      color: "burgundy"
+      color: "silver"
     },
     {
-      name: "VIP",
-      price: "£129",
+      name: "Gold",
+      price: "£99",
       period: "/month",
       features: [
-        "All Premium benefits",
-        "Exclusive VIP lounge access",
-        "Weekly coaching sessions",
-        "Private event discounts",
-        "Complimentary pro shop items"
+        "All Silver benefits",
+        "Unlimited table time on weekdays",
+        "25% off drinks at the bar",
+        "Free entry to all tournaments",
+        "Exclusive members lounge access"
       ],
       popular: false,
       color: "gold"
@@ -55,10 +55,10 @@ export function MembershipSection() {
   ];
 
   const payAsYouPlayRates = [
-    { name: "Snooker", price: "£10", period: "/hour" },
-    { name: "Pool", price: "£8", period: "/hour" },
-    { name: "Equipment Hire", price: "£3", period: "/session" },
-    { name: "Coaching", price: "£25", period: "/hour" }
+    { name: "Pool Table", price: "£9", period: "/hour" },
+    { name: "Snooker Table", price: "£12", period: "/hour" },
+    { name: "Happy Hour Pool", price: "£7", period: "/hour" },
+    { name: "Equipment Hire", price: "£3", period: "/session" }
   ];
 
   const fadeInUp = {
@@ -81,7 +81,7 @@ export function MembershipSection() {
           custom={0}
           variants={fadeInUp}
         >
-          Membership Plans
+          Membership
           <span className="block w-20 h-0.5 bg-gold mx-auto mt-4"></span>
         </motion.h2>
         
@@ -96,9 +96,9 @@ export function MembershipSection() {
               custom={index + 1}
               variants={fadeInUp}
             >
-              <div className={`bg-${plan.color === 'gold' ? 'gold text-navy' : 'burgundy text-white'} text-center py-4 relative`}>
+              <div className={`${plan.color === 'gold' ? 'bg-gold text-navy' : plan.color === 'silver' ? 'bg-gray-300 text-navy' : 'bg-amber-700 text-white'} text-center py-4 relative`}>
                 {plan.popular && (
-                  <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-burgundy text-white text-xs py-1 px-3 rounded-full">
+                  <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-blue-500 text-white text-xs py-1 px-3 rounded-full">
                     MOST POPULAR
                   </div>
                 )}
@@ -119,11 +119,15 @@ export function MembershipSection() {
                 </ul>
                 <Button 
                   onClick={scrollToContact}
-                  className={`w-full ${plan.popular 
-                    ? 'bg-burgundy hover:bg-burgundy/90 text-white' 
-                    : 'bg-gold hover:bg-gold/90 text-navy'} font-bold py-3 rounded-md transition-all tracking-wide`}
+                  className={`w-full ${
+                    plan.color === 'gold' 
+                      ? 'bg-gold hover:bg-gold/90 text-navy' 
+                      : plan.color === 'silver'
+                        ? 'bg-gray-300 hover:bg-gray-400 text-navy'
+                        : 'bg-amber-700 hover:bg-amber-800 text-white'
+                  } font-bold py-3 rounded-md transition-all tracking-wide`}
                 >
-                  SELECT PLAN
+                  JOIN NOW
                 </Button>
               </div>
             </motion.div>
@@ -138,9 +142,9 @@ export function MembershipSection() {
           custom={5}
           variants={fadeInUp}
         >
-          <h3 className="text-2xl font-semibold text-gold mb-6 font-serif text-center">Pay-As-You-Play</h3>
+          <h3 className="text-2xl font-semibold text-gold mb-6 font-serif text-center">Pay-As-You-Play Rates</h3>
           <p className="text-center text-gray-300 mb-8">
-            Not ready for membership? Enjoy our facilities on a casual basis with our competitive hourly rates.
+            Not ready for membership? Enjoy our premium tables on a casual basis with our competitive rates.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {payAsYouPlayRates.map((rate, index) => (
@@ -158,6 +162,22 @@ export function MembershipSection() {
               </motion.div>
             ))}
           </div>
+          
+          <motion.div
+            className="text-center mt-8"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            custom={10}
+            variants={fadeInUp}
+          >
+            <Button 
+              onClick={scrollToContact}
+              className="bg-gold hover:bg-gold/90 text-navy font-bold py-3 px-6 rounded-md transition-all tracking-wide"
+            >
+              BOOK A TABLE
+            </Button>
+          </motion.div>
         </motion.div>
       </div>
     </section>

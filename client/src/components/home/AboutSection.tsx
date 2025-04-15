@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Trophy, GlassWater } from "lucide-react";
+import { Trophy, GlassWater, Clock, Music } from "lucide-react";
 
 export function AboutSection() {
   const fadeIn = {
@@ -22,7 +22,7 @@ export function AboutSection() {
           custom={0}
           variants={fadeIn}
         >
-          About Elite Cue Club
+          About QClub147
           <span className="block w-20 h-0.5 bg-gold mx-auto mt-4"></span>
         </motion.h2>
         
@@ -35,23 +35,23 @@ export function AboutSection() {
             variants={fadeIn}
           >
             <h3 className="text-2xl font-semibold text-gold mb-6 font-serif relative">
-              A Premium Venue for Snooker Enthusiasts
+              London's Finest Cue Sports Venue
               <span className="block w-20 h-0.5 bg-gold mt-4"></span>
             </h3>
             <p className="text-gray-200 mb-4 leading-relaxed">
-              Founded in 2015, Elite Cue Club has established itself as the premier destination for snooker and pool enthusiasts. Our club combines professional-grade playing facilities with an elegant, comfortable atmosphere.
+              Established in 2018, QClub147 has quickly become the go-to destination for pool and snooker enthusiasts in London. Our modern venue combines sporting excellence with a vibrant social atmosphere.
             </p>
             <p className="text-gray-200 mb-4 leading-relaxed">
-              We pride ourselves on maintaining championship-standard tables, offering expert coaching, and providing a sophisticated social space where players of all levels can enjoy their favorite games.
+              With 8 competition-standard American pool tables and a championship snooker table, we cater to casual players and serious competitors alike. Our stylish bar area serves a range of premium drinks and quality food in a relaxed, welcoming environment.
             </p>
             
-            <div className="flex flex-col sm:flex-row gap-4 mt-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8">
               <div className="flex items-center">
                 <div className="flex-shrink-0 w-12 h-12 bg-gold rounded-full flex items-center justify-center">
                   <Trophy className="h-6 w-6 text-navy" />
                 </div>
                 <div className="ml-4">
-                  <h4 className="font-semibold text-white">Professional Tables</h4>
+                  <h4 className="font-semibold text-white">Premium Tables</h4>
                   <p className="text-gray-300 text-sm">Tournament-grade equipment</p>
                 </div>
               </div>
@@ -60,8 +60,26 @@ export function AboutSection() {
                   <GlassWater className="h-6 w-6 text-navy" />
                 </div>
                 <div className="ml-4">
-                  <h4 className="font-semibold text-white">Full-Service Bar</h4>
-                  <p className="text-gray-300 text-sm">Premium drinks & cocktails</p>
+                  <h4 className="font-semibold text-white">Stylish Bar</h4>
+                  <p className="text-gray-300 text-sm">Craft beers & cocktails</p>
+                </div>
+              </div>
+              <div className="flex items-center mt-4">
+                <div className="flex-shrink-0 w-12 h-12 bg-gold rounded-full flex items-center justify-center">
+                  <Clock className="h-6 w-6 text-navy" />
+                </div>
+                <div className="ml-4">
+                  <h4 className="font-semibold text-white">Late Opening</h4>
+                  <p className="text-gray-300 text-sm">Open until 2AM weekends</p>
+                </div>
+              </div>
+              <div className="flex items-center mt-4">
+                <div className="flex-shrink-0 w-12 h-12 bg-gold rounded-full flex items-center justify-center">
+                  <Music className="h-6 w-6 text-navy" />
+                </div>
+                <div className="ml-4">
+                  <h4 className="font-semibold text-white">Relaxed Vibe</h4>
+                  <p className="text-gray-300 text-sm">Great music & atmosphere</p>
                 </div>
               </div>
             </div>
@@ -76,14 +94,14 @@ export function AboutSection() {
             variants={fadeIn}
           >
             <img 
-              src="https://images.unsplash.com/photo-1617969583865-936913352895?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1744&q=80" 
-              alt="Elite Cue Club interior" 
+              src="https://images.unsplash.com/photo-1610641818989-bcd0bd756744?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
+              alt="QClub147 interior" 
               className="rounded-lg shadow-xl w-full h-auto object-cover" 
               style={{ maxHeight: "500px" }}
             />
             <div className="absolute -bottom-5 -left-5 bg-navy p-4 rounded shadow-lg hidden md:block">
-              <p className="text-gold font-bold text-lg">ESTABLISHED 2015</p>
-              <p className="text-white text-sm">Serving the community for {new Date().getFullYear() - 2015} years</p>
+              <p className="text-gold font-bold text-lg">ESTABLISHED 2018</p>
+              <p className="text-white text-sm">Serving London for {new Date().getFullYear() - 2018} years</p>
             </div>
           </motion.div>
         </div>
@@ -91,19 +109,19 @@ export function AboutSection() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-24">
           {[
             {
-              icon: "🌟",
-              title: "Premium Experience",
-              description: "Immerse yourself in our meticulously designed space featuring professional lighting, climate control, and ergonomic seating."
+              icon: "🎱",
+              title: "Play",
+              description: "Whether you're playing pool with friends or practicing your snooker skills, our venue offers the perfect setting for cue sports lovers."
             },
             {
-              icon: "👥",
-              title: "Vibrant Community",
-              description: "Join our diverse community of players, from beginners to professionals, and participate in regular tournaments and social events."
+              icon: "🍹",
+              title: "Drink",
+              description: "Our well-stocked bar features an extensive selection of premium spirits, craft beers, and signature cocktails to enjoy during your visit."
             },
             {
-              icon: "🏆",
-              title: "Expert Coaching",
-              description: "Improve your skills with guidance from our professional coaches who provide personalized lessons for players of all levels."
+              icon: "🎭",
+              title: "Socialize",
+              description: "More than just a pool hall, QClub147 is a social hub where you can meet new people, join tournaments, and enjoy special events."
             }
           ].map((feature, index) => (
             <motion.div

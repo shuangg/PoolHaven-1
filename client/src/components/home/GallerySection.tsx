@@ -7,44 +7,48 @@ export function GallerySection() {
   
   const galleryImages = [
     {
-      src: "https://images.unsplash.com/photo-1625046641974-e3894531d2b3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1776&q=80",
-      alt: "Championship snooker table"
+      src: "https://images.unsplash.com/photo-1610641818989-bcd0bd756744?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+      alt: "QClub147 interior view"
     },
     {
-      src: "https://images.unsplash.com/photo-1625046581800-944b1a3a1d3f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80",
+      src: "https://images.unsplash.com/photo-1611275484845-52a972d02551?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
       alt: "American pool table"
     },
     {
-      src: "https://images.unsplash.com/photo-1597290282695-edc43d0e7129?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2075&q=80",
-      alt: "Bar area with premium spirits"
+      src: "https://images.unsplash.com/photo-1626379801357-537572de4ad6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+      alt: "Club atmosphere"
     },
     {
-      src: "https://images.unsplash.com/photo-1584248142698-82acdf8a8f67?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-      alt: "VIP lounge seating"
+      src: "https://images.unsplash.com/photo-1514933651103-005eec06c04b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80",
+      alt: "Stylish bar area"
     },
     {
-      src: "https://images.unsplash.com/photo-1513267048331-5611cad62e41?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-      alt: "Tournament in progress"
+      src: "https://images.unsplash.com/photo-1609788063371-f31a71edf71f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+      alt: "Championship snooker table"
     },
     {
-      src: "https://images.unsplash.com/photo-1470337458703-46ad1756a187?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80",
-      alt: "Professional cues and accessories"
+      src: "https://images.unsplash.com/photo-1598899246709-c8273815f3ef?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80",
+      alt: "Premium cocktails"
     }
   ];
 
   // Additional images that show when "View More" is clicked
   const extraImages = [
     {
-      src: "https://images.unsplash.com/photo-1610841764792-a895c0ede71f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-      alt: "Close-up of snooker balls"
+      src: "https://images.unsplash.com/photo-1610841763883-cf7e9d522614?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2068&q=80",
+      alt: "Pool table setup"
     },
     {
-      src: "https://images.unsplash.com/photo-1609692043083-e7d2611b4ea4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-      alt: "Player taking a shot"
+      src: "https://images.unsplash.com/photo-1470337458703-46ad1756a187?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80", 
+      alt: "Premium cues"
     },
     {
-      src: "https://images.unsplash.com/photo-1461354464878-ad92f492a5a0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-      alt: "Cocktail at the bar"
+      src: "https://images.unsplash.com/photo-1551632436-cbf8dd35adfa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80",
+      alt: "DJ night atmosphere"
+    },
+    {
+      src: "https://images.unsplash.com/photo-1583908701673-900f3d4ecdb3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+      alt: "Weekend social events"
     }
   ];
 
@@ -77,7 +81,7 @@ export function GallerySection() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          Our Gallery
+          Gallery
           <span className="block w-20 h-0.5 bg-gold mx-auto mt-4"></span>
         </motion.h2>
         
@@ -91,14 +95,19 @@ export function GallerySection() {
           {displayedImages.map((image, index) => (
             <motion.div 
               key={index} 
-              className="overflow-hidden rounded-lg shadow-lg"
+              className="overflow-hidden rounded-lg shadow-lg group"
               variants={item}
             >
-              <img 
-                src={image.src} 
-                alt={image.alt} 
-                className="w-full h-64 object-cover transition-transform duration-300 hover:scale-105" 
-              />
+              <div className="relative h-64 overflow-hidden">
+                <img 
+                  src={image.src} 
+                  alt={image.alt} 
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" 
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-navy/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+                  <p className="text-white p-4 font-medium">{image.alt}</p>
+                </div>
+              </div>
             </motion.div>
           ))}
         </motion.div>
