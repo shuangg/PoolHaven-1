@@ -48,10 +48,10 @@ export function Header() {
   };
 
   return (
-    <header className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? "bg-navy/95 shadow-md" : ""}`}>
+    <header className={`fixed top-0 w-full z-50 transition-all duration-300 ${isScrolled ? "bg-navy/95 shadow-md" : "bg-navy/80"}`}>
       <nav className="container mx-auto px-4 md:px-8 py-4 flex items-center justify-between">
         <Link href="/" className="text-2xl font-bold text-white font-serif">
-          <span className="text-gold">Q</span>Club<span className="text-gold">147</span>
+          <span className="text-yellow-500">Q</span>Club<span className="text-yellow-500">147</span>
         </Link>
         
         {/* Mobile Menu */}
@@ -67,7 +67,7 @@ export function Header() {
                 <Button
                   key={link.name}
                   variant="ghost"
-                  className="justify-start text-white hover:text-gold hover:bg-transparent"
+                  className="justify-start text-white hover:text-yellow-500 hover:bg-transparent"
                   onClick={() => handleNavClick(link.href)}
                 >
                   {link.name}
@@ -83,7 +83,7 @@ export function Header() {
             <li key={link.name}>
               <button
                 onClick={() => handleNavClick(link.href)}
-                className="hover:text-gold transition-colors font-medium"
+                className="hover:text-yellow-500 transition-colors font-medium"
               >
                 {link.name}
               </button>
