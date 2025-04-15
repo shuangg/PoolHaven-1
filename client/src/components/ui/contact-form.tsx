@@ -72,7 +72,7 @@ export function ContactForm() {
 
   return (
     <Form {...form}>
-      <form onSubmit={form.handleSubmit(onSubmit)} className="bg-navy p-8 rounded-lg shadow-lg">
+      <form onSubmit={form.handleSubmit(onSubmit)} className="bg-navy p-8 rounded-lg shadow-xl border border-gold/20">
         <h3 className="text-2xl font-semibold text-gold mb-6 font-serif">Send a Message</h3>
         
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-6">
@@ -86,7 +86,7 @@ export function ContactForm() {
                   <Input 
                     placeholder="Your name" 
                     {...field} 
-                    className="bg-darkGray border border-gray-700 text-white focus:border-gold" 
+                    className="bg-darkGray border border-gray-700 text-white focus:border-gold focus:ring-gold/20" 
                   />
                 </FormControl>
                 <FormMessage />
@@ -104,7 +104,7 @@ export function ContactForm() {
                   <Input 
                     placeholder="Your email" 
                     {...field} 
-                    className="bg-darkGray border border-gray-700 text-white focus:border-gold" 
+                    className="bg-darkGray border border-gray-700 text-white focus:border-gold focus:ring-gold/20" 
                   />
                 </FormControl>
                 <FormMessage />
@@ -124,7 +124,7 @@ export function ContactForm() {
                 defaultValue={field.value}
               >
                 <FormControl>
-                  <SelectTrigger className="bg-darkGray border border-gray-700 text-white focus:border-gold">
+                  <SelectTrigger className="bg-darkGray border border-gray-700 text-white focus:border-gold focus:ring-gold/20">
                     <SelectValue placeholder="Please select" />
                   </SelectTrigger>
                 </FormControl>
@@ -132,7 +132,7 @@ export function ContactForm() {
                   <SelectItem value="membership">Membership Inquiry</SelectItem>
                   <SelectItem value="booking">Table Booking</SelectItem>
                   <SelectItem value="events">Private Event</SelectItem>
-                  <SelectItem value="coaching">Coaching Sessions</SelectItem>
+                  <SelectItem value="group">Group Booking</SelectItem>
                   <SelectItem value="other">Other</SelectItem>
                 </SelectContent>
               </Select>
@@ -152,7 +152,7 @@ export function ContactForm() {
                   placeholder="Your message" 
                   rows={5} 
                   {...field} 
-                  className="bg-darkGray border border-gray-700 text-white focus:border-gold" 
+                  className="bg-darkGray border border-gray-700 text-white focus:border-gold focus:ring-gold/20" 
                 />
               </FormControl>
               <FormMessage />
@@ -163,7 +163,7 @@ export function ContactForm() {
         <Button 
           type="submit" 
           disabled={mutation.isPending}
-          className="w-full bg-gold hover:bg-gold/90 text-navy font-bold py-3 rounded transition-all tracking-wide"
+          className="w-full bg-gold hover:bg-gold/90 text-navy font-bold py-3 rounded-md transition-all tracking-wide text-md"
         >
           {mutation.isPending ? "SENDING..." : "SEND MESSAGE"}
         </Button>
