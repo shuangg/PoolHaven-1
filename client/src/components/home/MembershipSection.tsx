@@ -35,7 +35,7 @@ export function MembershipSection() {
         "One free hourly coaching session",
         "Guest passes (2 per month)"
       ],
-      popular: true,
+      popular: false,
       color: "silver"
     },
     {
@@ -82,7 +82,7 @@ export function MembershipSection() {
           variants={fadeInUp}
         >
           Membership
-          <span className="block w-20 h-0.5 bg-gold mx-auto mt-4"></span>
+          <span className="block w-20 h-0.5 bg-yellow-500 mx-auto mt-4"></span>
         </motion.h2>
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -118,7 +118,7 @@ export function MembershipSection() {
                 <ul className="space-y-3 mb-8">
                   {plan.features.map((feature, featureIndex) => (
                     <li key={featureIndex} className="flex items-center">
-                      <Check className="text-gold mr-3 h-5 w-5 flex-shrink-0" />
+                      <Check className="text-yellow-500 mr-3 h-5 w-5 flex-shrink-0" />
                       <span className="text-gray-300">{feature}</span>
                     </li>
                   ))}
@@ -148,7 +148,7 @@ export function MembershipSection() {
           custom={5}
           variants={fadeInUp}
         >
-          <h3 className="text-2xl font-semibold text-gold mb-6 font-serif text-center">Pay-As-You-Play Rates</h3>
+          <h3 className="text-2xl font-semibold text-yellow-500 mb-6 font-serif text-center">Pay-As-You-Play Rates</h3>
           <p className="text-center text-gray-300 mb-8">
             Not ready for membership? Enjoy our premium tables on a casual basis with our competitive rates.
           </p>
@@ -164,7 +164,7 @@ export function MembershipSection() {
                 variants={fadeInUp}
               >
                 <h4 className="text-white font-semibold mb-2">{rate.name}</h4>
-                <p className="text-gold text-2xl font-bold">{rate.price}<span className="text-sm text-gray-300">{rate.period}</span></p>
+                <p className="text-yellow-500 text-2xl font-bold">{rate.price}<span className="text-sm text-gray-300">{rate.period}</span></p>
               </motion.div>
             ))}
           </div>

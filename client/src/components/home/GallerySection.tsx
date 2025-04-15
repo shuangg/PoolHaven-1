@@ -7,27 +7,27 @@ export function GallerySection() {
   
   const galleryImages = [
     {
-      src: "https://images.pexels.com/photos/4926677/pexels-photo-4926677.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      src: "https://images.pexels.com/photos/7055234/pexels-photo-7055234.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       alt: "American pool tables"
     },
     {
-      src: "https://images.pexels.com/photos/532019/pexels-photo-532019.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      src: "https://images.pexels.com/photos/8939809/pexels-photo-8939809.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       alt: "Championship snooker table"
     },
     {
-      src: "https://images.pexels.com/photos/344029/pexels-photo-344029.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      src: "https://images.pexels.com/photos/261043/pexels-photo-261043.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       alt: "Club atmosphere"
     },
     {
-      src: "https://images.pexels.com/photos/274192/pexels-photo-274192.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      src: "https://images.pexels.com/photos/3566120/pexels-photo-3566120.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       alt: "Stylish bar area"
     },
     {
-      src: "https://images.pexels.com/photos/3784221/pexels-photo-3784221.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      src: "https://images.pexels.com/photos/5514532/pexels-photo-5514532.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       alt: "Professional pool player"
     },
     {
-      src: "https://images.pexels.com/photos/3324094/pexels-photo-3324094.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      src: "https://images.pexels.com/photos/1189261/pexels-photo-1189261.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       alt: "Premium cocktails"
     }
   ];
@@ -35,20 +35,20 @@ export function GallerySection() {
   // Additional images that show when "View More" is clicked
   const extraImages = [
     {
-      src: "https://images.pexels.com/photos/7925883/pexels-photo-7925883.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      src: "https://images.pexels.com/photos/344034/pexels-photo-344034.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       alt: "Pool table setup"
     },
     {
-      src: "https://images.pexels.com/photos/8969237/pexels-photo-8969237.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2", 
+      src: "https://images.pexels.com/photos/2728255/pexels-photo-2728255.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2", 
       alt: "Premium cues"
     },
     {
-      src: "https://images.pexels.com/photos/3437689/pexels-photo-3437689.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-      alt: "DJ night atmosphere"
+      src: "https://images.pexels.com/photos/1400255/pexels-photo-1400255.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      alt: "Club DJ nights"
     },
     {
-      src: "https://images.pexels.com/photos/696218/pexels-photo-696218.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-      alt: "Weekend social events"
+      src: "https://images.pexels.com/photos/4254892/pexels-photo-4254892.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      alt: "Weekend events"
     }
   ];
 
