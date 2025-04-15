@@ -7,27 +7,27 @@ export function GallerySection() {
   
   const galleryImages = [
     {
-      src: "https://images.unsplash.com/photo-1611275484845-52a972d02551?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+      src: "https://images.pexels.com/photos/4926677/pexels-photo-4926677.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       alt: "American pool tables"
     },
     {
-      src: "https://images.unsplash.com/photo-1609788063371-f31a71edf71f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+      src: "https://images.pexels.com/photos/532019/pexels-photo-532019.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       alt: "Championship snooker table"
     },
     {
-      src: "https://images.unsplash.com/photo-1571100030164-80d05219a570?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80",
+      src: "https://images.pexels.com/photos/344029/pexels-photo-344029.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       alt: "Club atmosphere"
     },
     {
-      src: "https://images.unsplash.com/photo-1514933651103-005eec06c04b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80",
+      src: "https://images.pexels.com/photos/274192/pexels-photo-274192.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       alt: "Stylish bar area"
     },
     {
-      src: "https://images.unsplash.com/photo-1572116469696-31de0f17cc34?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80",
+      src: "https://images.pexels.com/photos/3784221/pexels-photo-3784221.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       alt: "Professional pool player"
     },
     {
-      src: "https://images.unsplash.com/photo-1598899246709-c8273815f3ef?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80",
+      src: "https://images.pexels.com/photos/3324094/pexels-photo-3324094.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       alt: "Premium cocktails"
     }
   ];
@@ -35,19 +35,19 @@ export function GallerySection() {
   // Additional images that show when "View More" is clicked
   const extraImages = [
     {
-      src: "https://images.unsplash.com/photo-1610841763883-cf7e9d522614?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2068&q=80",
+      src: "https://images.pexels.com/photos/7925883/pexels-photo-7925883.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       alt: "Pool table setup"
     },
     {
-      src: "https://images.unsplash.com/photo-1470337458703-46ad1756a187?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80", 
+      src: "https://images.pexels.com/photos/8969237/pexels-photo-8969237.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2", 
       alt: "Premium cues"
     },
     {
-      src: "https://images.unsplash.com/photo-1529567186287-3e17bdefa342?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80",
+      src: "https://images.pexels.com/photos/3437689/pexels-photo-3437689.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       alt: "DJ night atmosphere"
     },
     {
-      src: "https://images.unsplash.com/photo-1528495612343-9ca9f4a9f67c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80",
+      src: "https://images.pexels.com/photos/696218/pexels-photo-696218.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       alt: "Weekend social events"
     }
   ];
@@ -82,7 +82,7 @@ export function GallerySection() {
           transition={{ duration: 0.6 }}
         >
           Gallery
-          <span className="block w-20 h-0.5 bg-gold mx-auto mt-4"></span>
+          <span className="block w-20 h-0.5 bg-yellow-500 mx-auto mt-4"></span>
         </motion.h2>
         
         <motion.div 
@@ -122,7 +122,7 @@ export function GallerySection() {
           <Button 
             onClick={() => setShowAll(!showAll)} 
             variant="outline"
-            className="bg-transparent hover:bg-gold/10 text-gold border border-gold font-bold py-3 px-8 rounded-md transition-all tracking-wide"
+            className="bg-transparent hover:bg-yellow-500/10 text-yellow-500 border border-yellow-500 font-bold py-3 px-8 rounded-md transition-all tracking-wide"
           >
             {showAll ? "SHOW LESS" : "VIEW MORE PHOTOS"}
           </Button>
