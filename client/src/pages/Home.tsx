@@ -1,6 +1,6 @@
 import { HeroSection } from "@/components/home/HeroSection";
 import { AboutSection } from "@/components/home/AboutSection";
-import { TablesSection } from "@/components/home/TablesSection";
+import { TablesSection } from "@/components/home/TablesSection_new";
 import { GallerySection } from "@/components/home/GallerySection";
 import { MembershipSection } from "@/components/home/MembershipSection";
 import { ContactSection } from "@/components/home/ContactSection";

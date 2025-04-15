@@ -96,7 +96,13 @@ export function MembershipSection() {
               custom={index + 1}
               variants={fadeInUp}
             >
-              <div className={`${plan.color === 'gold' ? 'bg-gold text-navy' : plan.color === 'silver' ? 'bg-gray-300 text-navy' : 'bg-amber-700 text-white'} text-center py-4 relative`}>
+              <div className={`${
+                plan.color === 'gold' 
+                  ? 'bg-yellow-500 text-navy' 
+                  : plan.color === 'silver' 
+                    ? 'bg-gray-300 text-navy' 
+                    : 'bg-amber-700 text-white'
+                } text-center py-4 relative`}>
                 {plan.popular && (
                   <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-blue-500 text-white text-xs py-1 px-3 rounded-full">
                     MOST POPULAR
@@ -121,7 +127,7 @@ export function MembershipSection() {
                   onClick={scrollToContact}
                   className={`w-full ${
                     plan.color === 'gold' 
-                      ? 'bg-gold hover:bg-gold/90 text-navy' 
+                      ? 'bg-yellow-500 hover:bg-yellow-600 text-navy' 
                       : plan.color === 'silver'
                         ? 'bg-gray-300 hover:bg-gray-400 text-navy'
                         : 'bg-amber-700 hover:bg-amber-800 text-white'
@@ -173,7 +179,7 @@ export function MembershipSection() {
           >
             <Button 
               onClick={scrollToContact}
-              className="bg-gold hover:bg-gold/90 text-navy font-bold py-3 px-6 rounded-md transition-all tracking-wide"
+              className="bg-yellow-500 hover:bg-yellow-600 text-navy font-bold py-3 px-6 rounded-md transition-all tracking-wide"
             >
               BOOK A TABLE
             </Button>
