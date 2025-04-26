@@ -108,7 +108,7 @@ export function MembershipSection() {
                 plan.color === 'gold' 
                   ? 'bg-yellow-500 text-navy' 
                   : plan.color === 'silver' 
-                    ? 'bg-gray-100 text-navy' 
+                    ? 'bg-gray-300 text-gray-700' 
                     : 'bg-amber-700 text-white'
                 } text-center py-4 relative`}>
                 {plan.popular && (
