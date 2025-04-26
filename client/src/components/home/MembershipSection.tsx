@@ -106,9 +106,9 @@ export function MembershipSection() {
             >
               <div className={`${
                 plan.color === 'gold' 
-                  ? 'bg-yellow-500 text-navy' 
+                  ? 'bg-yellow-500 text-white' 
                   : plan.color === 'silver' 
-                    ? 'bg-gray-300 text-gray-700' 
+                    ? 'bg-gray-300 text-white' 
                     : 'bg-amber-700 text-white'
                 } text-center py-4 relative`}>
                 {plan.popular && (
