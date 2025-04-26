@@ -12,9 +12,10 @@ export function HeroSection() {
   return (
     <section 
       id="home" 
-      className="min-h-screen flex items-center justify-center text-center bg-cover bg-center bg-no-repeat pt-16"
+      className="min-h-screen flex items-center justify-center text-center bg-cover bg-center bg-no-repeat"
       style={{
-        backgroundImage: "linear-gradient(rgba(18, 24, 33, 0.7), rgba(18, 24, 33, 0.8)), url('https://images.unsplash.com/photo-1608505256560-9224ba550d3b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80')"
+        backgroundImage: "linear-gradient(rgba(18, 24, 33, 0.7), rgba(18, 24, 33, 0.8)), url('https://images.unsplash.com/photo-1608505256560-9224ba550d3b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80')",
+        paddingTop: '80px' // Match the header height
       }}
     >
       <div className="container mx-auto px-4 md:px-8">

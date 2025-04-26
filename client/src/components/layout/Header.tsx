@@ -48,8 +48,8 @@ export function Header() {
   };
 
   return (
-    <header className={`fixed top-0 w-full z-[999] transition-all duration-300 ${isScrolled ? "bg-navy/95 shadow-md" : "bg-navy/95"}`}>
-      <nav className="container mx-auto px-4 md:px-8 py-4 flex items-center justify-between">
+    <header className={`fixed top-0 w-full z-[999] transition-all duration-300 ${isScrolled ? "bg-navy/95 shadow-md" : "bg-navy/95"}`} style={{ height: '80px' }}>
+      <nav className="container mx-auto px-4 md:px-8 py-4 flex items-center justify-between h-full">
         <Link href="/" className="text-2xl font-bold text-white font-serif">
           <span className="text-yellow-500">Q</span>Club<span className="text-yellow-500">147</span>
         </Link>
