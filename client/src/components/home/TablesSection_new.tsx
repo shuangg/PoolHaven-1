@@ -19,7 +19,7 @@ export function TablesSection() {
       const headerOffset = 100;
       const elementPosition = contactSection.getBoundingClientRect().top;
       const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-      
+
       window.scrollTo({
         top: offsetPosition,
         behavior: "smooth"
@@ -49,7 +49,7 @@ export function TablesSection() {
           description: "Well-spaced tables for comfortable play"
         }
       ],
-      image: "https://images.unsplash.com/photo-1611275484845-52a972d02551?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+      image: "https://images.unsplash.com/photo-1576767695773-aa7854c50fdd?ixlib=rb-4.0.3&auto=format&fit=crop&w=1260&q=80"
     },
     {
       type: "Championship Snooker Table",
@@ -72,7 +72,7 @@ export function TablesSection() {
           description: "Full range of cues, rests, and extensions available"
         }
       ],
-      image: "https://images.unsplash.com/photo-1609788063371-f31a71edf71f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+      image: "https://images.unsplash.com/photo-1603145730162-59051171dd88?ixlib=rb-4.0.3&auto=format&fit=crop&w=1260&q=80"
     }
   ];
 
@@ -113,7 +113,7 @@ export function TablesSection() {
           Our Tables
           <span className="block w-20 h-0.5 bg-yellow-500 mx-auto mt-4"></span>
         </motion.h2>
-        
+
         {tables.map((table, tableIndex) => (
           <div 
             key={table.type}
@@ -133,7 +133,7 @@ export function TablesSection() {
                     {table.count} {table.type}
                     <span className="block w-20 h-0.5 bg-yellow-500 mt-4"></span>
                   </h3>
-                  
+
                   <ul className="space-y-4 mt-6">
                     {table.details.map((detail, detailIndex) => (
                       <motion.li 
@@ -153,7 +153,7 @@ export function TablesSection() {
                       </motion.li>
                     ))}
                   </ul>
-                  
+
                   <motion.div
                     initial="hidden"
                     whileInView="visible"
@@ -170,7 +170,7 @@ export function TablesSection() {
                     </Button>
                   </motion.div>
                 </motion.div>
-                
+
                 <motion.div
                   className="order-1 lg:order-2"
                   initial="hidden"
@@ -204,7 +204,7 @@ export function TablesSection() {
                     style={{ maxHeight: "500px" }}
                   />
                 </motion.div>
-                
+
                 <motion.div
                   initial="hidden"
                   whileInView="visible"
@@ -217,7 +217,7 @@ export function TablesSection() {
                     {table.count} {table.type}
                     <span className="block w-20 h-0.5 bg-yellow-500 mt-4"></span>
                   </h3>
-                  
+
                   <ul className="space-y-4 mt-6">
                     {table.details.map((detail, detailIndex) => (
                       <motion.li 
@@ -237,7 +237,7 @@ export function TablesSection() {
                       </motion.li>
                     ))}
                   </ul>
-                  
+
                   <motion.div
                     initial="hidden"
                     whileInView="visible"
@@ -258,7 +258,7 @@ export function TablesSection() {
             )}
           </div>
         ))}
-        
+
         <div className="mt-24">
           <motion.h3 
             className="text-2xl font-semibold text-center text-yellow-500 mb-12 font-serif"
@@ -288,7 +288,7 @@ export function TablesSection() {
             ))}
           </div>
         </div>
-        
+
         <motion.div
           className="mt-16 bg-darkGray/30 p-8 rounded-lg text-center"
           initial="hidden"
