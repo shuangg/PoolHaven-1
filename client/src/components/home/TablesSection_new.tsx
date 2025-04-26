@@ -49,7 +49,7 @@ export function TablesSection() {
           description: "Well-spaced tables for comfortable play"
         }
       ],
-      image: "https://images.unsplash.com/photo-1576767695773-aa7854c50fdd?ixlib=rb-4.0.3&auto=format&fit=crop&w=1260&q=80"
+      image: "https://images.unsplash.com/photo-161177418622-18aee50cc9a8?ixlib=rb-4.0.3&auto=format&fit=crop&w=1260&q=80"
     },
     {
       type: "Championship Snooker Table",
@@ -72,7 +72,7 @@ export function TablesSection() {
           description: "Full range of cues, rests, and extensions available"
         }
       ],
-      image: "https://images.unsplash.com/photo-1603145730162-59051171dd88?ixlib=rb-4.0.3&auto=format&fit=crop&w=1260&q=80"
+      image: "https://images.unsplash.com/photo-1625046436348-fd77abc25f4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1260&q=80"
     }
   ];
 
