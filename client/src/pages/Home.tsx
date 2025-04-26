@@ -19,7 +19,16 @@ export default function Home() {
         event.preventDefault();
         const targetElement = document.querySelector(anchor.hash);
         if (targetElement) {
-          targetElement.scrollIntoView({ behavior: 'smooth' });
+          // Scroll with offset to account for the fixed header
+          const headerOffset = 100;
+          const elementPosition = targetElement.getBoundingClientRect().top;
+          const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+          
+          window.scrollTo({
+            top: offsetPosition,
+            behavior: 'smooth'
+          });
+          
           history.pushState(null, '', anchor.hash);
         }
       }

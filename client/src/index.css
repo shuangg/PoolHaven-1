@@ -13,12 +13,12 @@
 
   /* Scroll padding to account for fixed header */
   html {
-    scroll-padding-top: 80px;
+    scroll-padding-top: 100px;
   }
 }
 
 @layer components {
   .section-container {
-    @apply pt-24 md:pt-32; /* Add padding to account for the fixed header */
+    @apply pt-32 md:pt-36; /* Increase padding to account for the fixed header */
   }
 }

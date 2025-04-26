@@ -5,7 +5,15 @@ export function HeroSection() {
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
+      // Scroll with offset to account for the fixed header
+      const headerOffset = 100;
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+      
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth"
+      });
     }
   };
 
@@ -15,7 +23,7 @@ export function HeroSection() {
       className="min-h-screen flex items-center justify-center text-center bg-cover bg-center bg-no-repeat"
       style={{
         backgroundImage: "linear-gradient(rgba(18, 24, 33, 0.7), rgba(18, 24, 33, 0.8)), url('https://images.unsplash.com/photo-1608505256560-9224ba550d3b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80')",
-        paddingTop: '80px' // Match the header height
+        paddingTop: '120px' // Increased padding to avoid overlap
       }}
     >
       <div className="container mx-auto px-4 md:px-8">
