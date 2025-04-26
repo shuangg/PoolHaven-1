@@ -118,12 +118,12 @@ export function MembershipSection() {
                 )}
                 <h3 className="text-2xl font-bold font-serif">{plan.name}</h3>
               </div>
-              <div className="p-6 flex flex-col h-[420px]">
+              <div className="p-6 flex flex-col h-[480px]">
                 <div className="text-center mb-6">
                   <span className="text-white text-4xl font-bold">{plan.price}</span>
                   <span className="text-gray-300">{plan.period}</span>
                 </div>
-                <ul className="space-y-3 flex-grow">
+                <ul className="space-y-3 mb-auto">
                   {plan.features.map((feature, featureIndex) => (
                     <li key={featureIndex} className="flex items-center">
                       <Check className="text-yellow-500 mr-3 h-5 w-5 flex-shrink-0" />
@@ -133,7 +133,7 @@ export function MembershipSection() {
                 </ul>
                 <Button 
                   onClick={scrollToContact}
-                  className={`w-full mt-8 ${
+                  className={`w-full ${
                     plan.color === 'gold' 
                       ? 'bg-yellow-500 hover:bg-yellow-600 text-navy' 
                       : plan.color === 'silver'
