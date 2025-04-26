@@ -108,7 +108,7 @@ export function MembershipSection() {
                 plan.color === 'gold' 
                   ? 'bg-yellow-500 text-white' 
                   : plan.color === 'silver' 
-                    ? 'bg-gray-300 text-white' 
+                    ? 'bg-gray-500 text-white' 
                     : 'bg-amber-700 text-white'
                 } text-center py-4 relative`}>
                 {plan.popular && (
@@ -137,7 +137,7 @@ export function MembershipSection() {
                     plan.color === 'gold' 
                       ? 'bg-yellow-500 hover:bg-yellow-600 text-navy' 
                       : plan.color === 'silver'
-                        ? 'bg-gray-300 hover:bg-gray-400 text-navy'
+                        ? 'bg-gray-500 hover:bg-gray-600 text-white'
                         : 'bg-amber-700 hover:bg-amber-800 text-white'
                   } font-bold py-3 rounded-md transition-all tracking-wide`}
                 >
