@@ -71,7 +71,7 @@ export function MembershipSection() {
   };
 
   return (
-    <section id="membership" className="py-20 bg-navy">
+    <section id="membership" className="py-20 bg-navy section-container">
       <div className="container mx-auto px-4 md:px-8">
         <motion.h2 
           className="text-3xl md:text-4xl font-bold text-center text-white mb-16 font-serif relative"
