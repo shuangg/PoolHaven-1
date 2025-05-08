@@ -22,7 +22,7 @@ export function HeroSection() {
       id="home" 
       className="min-h-screen flex items-center justify-center text-center bg-cover bg-center bg-no-repeat"
       style={{
-        backgroundImage: "linear-gradient(rgba(18, 24, 33, 0.7), rgba(18, 24, 33, 0.8)), url('https://images.pexels.com/photos/261043/pexels-photo-261043.jpeg?auto=compress&cs=tinysrgb&w=1920')",
+        backgroundImage: "linear-gradient(rgba(18, 24, 33, 0.7), rgba(18, 24, 33, 0.8)), url('https://images.unsplash.com/photo-1626598442658-fd2747289646?auto=format&fit=crop&q=80&w=2670')",
         paddingTop: '120px' // Increased padding to avoid overlap
       }}
     >
